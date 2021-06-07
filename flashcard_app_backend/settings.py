@@ -25,7 +25,7 @@ SECRET_KEY = '0_w&xq!lwxr(u80(n_a$o6n#*46)ljdnk0j6@!yoe5*4m0-e*b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -92,6 +92,12 @@ DATABASES = {
             'autocommit': True
         }
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES':[
+        'rest_framework.permissions.AllowAny'
+    ]
 }
 
 
