@@ -7,16 +7,18 @@ class CardSerializer(serializers.ModelSerializer):
     class Meta:
         model = Card
         fields = '__all__'
-        #exclude = ['']
-        
+        # exclude = ['']
+
+
 class FlashCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = FlashCard
         fields = '__all__'
-        #exclude = ['']
+        # exclude = ['']
+
 
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Collection
         fields = '__all__'
-        #exclude = ['']
+        # exclude = ['']
